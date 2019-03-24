@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>login.html</title>
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+  	function check(){
+  		if(document.getElementById("username").value.length ==0 ){
+			document.getElementById("username1").innerHTML="不能为空！";
+			return false;
+		}else if(document.getElementById("password").value.length ==0 ){
+			document.getElementById("password1").innerHTML="不能为空！";
+			return false;
+		}
+		else{
+			return true;
+		}
+  	}
+  
+  </script>	
+</head>
+<body>
+<div id="box">
+  <div id="top"></div>
+  <div style="clear:both;"></div>
+  <div id="midle">
+    <div id="login">
+	<div id="lg_1">
+<form action="/library/LoginServlet" method="post" onSubmit="return check()";>
+     <p>
+      <label for="name">
+        <input type="image" name="button" id="button" src="../Images/lg_b.gif" />
+                       用户：   </label>
+        <input type="text"name="username" id="name" /><span id="username1"></span>
+          </p>
+     <p>
+   <label for="pass">密码：</label>
+  <input type="password" name="password" id="pass" /><span id="password1"></span>
+  </p>
+  </form>
+	</div>
+	<div style="clear:both;"></div>
+    </div>
+  </div>
+  <div id="bottom"></div>
+  <div style="clear:both;"></div>
+</div>
+  <div style="clear:both;"></div>
+</body>
+</html>

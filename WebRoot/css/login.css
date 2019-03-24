@@ -1,0 +1,76 @@
+<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+<style type="text/css">
+
+*{
+margin:0px;
+border:0px;
+padding:0px;
+overflow:hidden;
+
+}
+body{
+	background-image:url(../Images/bg.gif);
+	font-family:"ËÎÌו";
+	font-size:12px;
+	text-align:center;
+}
+#box{
+	width: 780px;
+	height:500px;
+	margin:0 auto;
+	text-align:left;
+}
+#top{
+    height: 155px;
+	width: auto;
+	margin:auto;
+	background-image: url(../Images/logo.jpg);
+	border-bottom-color:#FF0000;
+	overflow:hidden;
+}
+#midle{
+    height: 250px;
+	width: auto;
+	margin:auto;
+	background-image: url(../Images/login_bg.jpg);
+	border-bottom-color:#FF0000;
+	overflow:hidden;
+}
+#bottom{
+    height: 150px;
+	width: auto;
+	margin:auto;
+	border:0px;
+	border-bottom-color:#FF0000;
+	background-image: url(../Images/lg_bottom.jpg);
+}
+#login{
+	width:260px;
+    height: 150px;
+	margin-left:380px;
+	margin-top:85px;
+	background-image: url(../Images/login.gif);
+	overflow:hidden;
+}
+#lg_1{
+    margin-top:25px;
+	margin-left:5px;
+	color:RGB(33,182,253);
+}
+#lg_1 img {
+	margin-top:18px;
+	float:left;;
+	margin:18px -25px 0px 42px
+}
+#name,#pass {
+	border:#d4d0c8 solid 1px;
+	width:130px;
+	height:18px;
+	margin:1px 0px 2px 0px;
+}
+#button {
+	float:right;
+	margin-right:20px;
+	
+}
+

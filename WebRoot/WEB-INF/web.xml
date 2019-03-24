@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="gb2312"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<filter>
+		<filter-name>filter</filter-name>
+		<filter-class>com.cn.filter.Zh_Filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	 <filter>
+	<filter-name>login</filter-name>
+	<filter-class>com.cn.filter.login_Filter</filter-class>
+  </filter>
+  <filter-mapping>
+	<filter-name>login</filter-name>
+	<url-pattern>/webs/*</url-pattern>
+  </filter-mapping>
+	
+   <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.cn.login.LoginServlet</servlet-class>
+   </servlet>
+	<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddbookServlet</servlet-name>
+    <servlet-class>com.cn.books.AddbookServlet</servlet-class>
+  </servlet>
+	<servlet-mapping>
+    <servlet-name>AddbookServlet</servlet-name>
+    <url-pattern>/AddbookServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ShowBooksServlet</servlet-name>
+    <servlet-class>com.cn.books.ShowBooksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowBooksServlet</servlet-name>
+    <url-pattern>/ShowBooksServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>QueryByIdServlet</servlet-name>
+  <servlet-class>com.cn.books.QueryByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>  QueryByIdServlet</servlet-name>
+  <url-pattern>/QueryByIdServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateBookServlet</servlet-name>
+  <servlet-class>com.cn.books.UpdateBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateBookServlet</servlet-name>
+  <url-pattern>/UpdateBookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>DeleteBookServet</servlet-name>
+  <servlet-class>com.cn.books.DeleteBookServet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteBookServet</servlet-name>
+  <url-pattern>/DeleteBookServet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>QueryByXuehaoServlet</servlet-name>
+  <servlet-class>com.cn.readers.QueryByXuehaoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>QueryByXuehaoServlet</servlet-name>
+  <url-pattern>/QueryByXuehaoServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>ShowBorrowsServlet</servlet-name>
+  <servlet-class>com.cn.service.ShowBorrowsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ShowBorrowsServlet</servlet-name>
+  <url-pattern>/ShowBorrowsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Borrowservlet</servlet-name>
+  <servlet-class>com.cn.service.Borrowservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Borrowservlet</servlet-name>
+  <url-pattern>/Borrowservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>BackServlet</servlet-name>
+  <servlet-class>com.cn.service.BackServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>BackServlet</servlet-name>
+  <url-pattern>/BackServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>SearchServlet</servlet-name>
+  <servlet-class>com.cn.books.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SearchServlet</servlet-name>
+  <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  <servlet-name>RecordServlet</servlet-name>
+  <servlet-class>com.cn.books.RecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RecordServlet</servlet-name>
+  <url-pattern>/RecordServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>OverdueServlet</servlet-name>
+  <servlet-class>com.cn.books.OverdueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>OverdueServlet</servlet-name>
+  <url-pattern>/OverdueServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SearchbookServlet</servlet-name>
+  <servlet-class>com.cn.out.SearchbookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SearchbookServlet</servlet-name>
+  <url-pattern>/SearchbookServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ReaderinfoServlet</servlet-name>
+  <servlet-class>com.cn.out.ReaderinfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ReaderinfoServlet</servlet-name>
+  <url-pattern>/ReaderinfoServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>AddreaderServlet</servlet-name>
+  <servlet-class>com.cn.reader.AddreaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddreaderServlet</servlet-name>
+  <url-pattern>/AddreaderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>SearchReaderServlet</servlet-name>
+  <servlet-class>com.cn.reader.SearchReaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>SearchReaderServlet</servlet-name>
+  <url-pattern>/SearchReaderServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DeleteReaderServet</servlet-name>
+  <servlet-class>com.cn.reader.DeleteReaderServet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteReaderServet</servlet-name>
+  <url-pattern>/DeleteReaderServet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>QueryByxuehaoServlet</servlet-name>
+  <servlet-class>com.cn.reader.QueryByxuehaoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>QueryByxuehaoServlet</servlet-name>
+  <url-pattern>/QueryByxuehaoServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>UpdateReaderServlet</servlet-name>
+  <servlet-class>com.cn.reader.UpdateReaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateReaderServlet</servlet-name>
+  <url-pattern>/UpdateReaderServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  <servlet-name>ShowallBorrowServlet</servlet-name>
+  <servlet-class>com.cn.books.ShowallBorrowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ShowallBorrowServlet</servlet-name>
+  <url-pattern>/ShowallBorrowServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

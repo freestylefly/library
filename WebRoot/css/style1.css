@@ -1,0 +1,204 @@
+<meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+<style type="text/css">
+
+/* CSS Document */
+
+*{
+       margin:0px;
+       border:0px;
+       padding:0px;
+}
+body{
+	background-image:url(../Images/bg0.gif);
+	background-repeat:repeat-x;
+	font-family:"宋体";
+	font-size:12px;
+	text-align:center;
+}
+
+#box{
+    width: 880px;
+	height:100%;
+	margin:0 auto;
+	text-align:left;
+}
+#top{
+    width:auto;
+	height:118px;
+	background-image:url(../Images/top_bg0.gif);
+	overflow:hidden;
+}
+#close{
+    width:800px;
+    margin-top:10px;
+	text-align:right;
+	font-size:120%;  
+}
+#nav {
+    width:100%;
+    background:#BBD9EE;
+    font-size:150%;
+    line-height:normal;
+}
+#nav ul {
+	margin:0;
+	padding:2px 10px 0 2px;
+	list-style:none;
+}
+#nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#nav a {
+    float:left;
+    background:url("../Images/tableft.gif") no-repeat left top;
+    margin:0;
+    padding:0 0 0 4px;
+    text-decoration:none;
+}
+#nav a span {
+    float:left;
+    display:block;
+    background:url("../Images/tabright.gif") no-repeat right top;
+    padding:5px 15px 4px 6px;
+    color:#666;
+      }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+#nava span {float:none;}
+    /* End IE5-Mac hack */
+#nav a:hover span {
+      color:#66CCCC;
+}
+#nav a:hover {
+      background-position:0% -42px;
+}
+#nav a:hover span {
+      background-position:100% -42px;
+}
+#time{
+    width:270px;
+	float:right;
+	margin-top:5px;
+	font-size:90%;
+}
+#main{
+        width:auto;
+	height:auto;
+	border:#66CC00;
+}
+#main_1{
+    width:auto;
+	height:35px;
+	color:#009999;
+	background-image:url(../Images/main_1bg.gif);
+}
+#main_2{
+        height:300px;
+	width:auto;
+	background-image:url(../Images/main_2_0bg.jpg);
+}
+#main_2_1{
+    height:45px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/main_2_1bg.gif);
+}
+#addbook2_1{
+    height:45px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/addbook_bg.gif);
+}
+#searcbook2_1{
+    height:45px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/searchbook2_1.gif);
+}
+#borrowsearch{
+    height:45px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/borrowsearch.gif);
+}
+#addreader{
+    height:45px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/addreader.gif);
+}
+#main_2_2{
+    height:200px;
+	width:860px;
+	margin-left:10px;
+	background-image:url(../Images/main_2_2bg.jpg);
+}
+#main_2_2_1{
+    height:45px;
+	width:auto;
+	margin-top:75px;
+	margin-left:10px;
+}
+#main_2_2_1 table {
+   width:700px;
+   border-bottom:1px solid #5CA7BA; 
+   height:1px;
+   height:40px;
+}
+#main_2_2_1 table tr td{
+	width:auto;
+	height:40px;
+	padding-top:0px;
+	font-size:120%;
+        color:#009999;
+	vertical-align:middle;
+}
+#main_2_2_2{
+    height:55px;
+	width:auto;
+	margin-left:10px;
+}	
+#main_2_2_2 table tr td{
+	width:250px;
+	height:25px;
+	padding-top:0px;
+	font-size:90%;
+	color:#009999;
+	vertical-align:middle;
+	text-align:center;
+}
+.tdleft{
+      text-align:left;
+}    	    
+
+.ip{
+	border: 1px solid #3ca1af;
+	height: 19px;
+	width: 160px;
+	background-color:#cdf5f3;
+}
+.ip2{
+	border: 1px solid #3ca1af;
+	height: 19px;
+	width: 140px;
+	background-color:#66CCCC;
+}
+.ip1{
+	border: 1px solid #3ca1af;
+	height: 16px;
+	width: 122px;
+	background-color:#cdf5f3;
+}
+
+#footer1{
+    width:auto;
+	height:100px;
+	background-image:url(../Images/footer1_bg.gif);
+	overflow:hidden;
+}
+#footer1_1{
+    margin-top:45px;
+	text-align:center;
+	overflow:hidden;
+}
