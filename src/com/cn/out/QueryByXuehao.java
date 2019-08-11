@@ -1,4 +1,4 @@
-package com.cn.readers;
+package com.cn.out;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -21,7 +21,7 @@ public class QueryByXuehao {
 			rs=pstmt.executeQuery();
 			while(rs.next()){
 				readersVo=new ReadersVo();
-				readersVo.setId(rs.getInt("id"));
+//				readersVo.setId(rs.getInt("id"));
 				readersVo.setXuehao(rs.getString("xuehao"));
 				readersVo.setReader_name(rs.getString("reader_name"));
 				readersVo.setClassname(rs.getString("classname"));

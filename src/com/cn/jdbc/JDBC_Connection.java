@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class JDBC_Connection {
 	static String drivername="com.mysql.jdbc.Driver";
-	static String url="jdbc:mysql://localhost:3306/library";
+	static String url="jdbc:mysql://localhost:3306/library?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
 	static String username="root";
 	static String password="aaaaa123";
 	
@@ -18,7 +18,7 @@ public class JDBC_Connection {
 			System.out.println("创建驱动成功");
 		}catch (ClassNotFoundException e){
 			System.out.println("创建驱动失败，请检查");
-			e.printStackTrace();
+			e.printStackTrace();	
 		}
 	}
    public static Connection getConnection(){

@@ -1,4 +1,4 @@
-package com.cn.readers;
+package com.cn.out;
 
 import java.io.IOException;
 import java.io.PrintWriter;
